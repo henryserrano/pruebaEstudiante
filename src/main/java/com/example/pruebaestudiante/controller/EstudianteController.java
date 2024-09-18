@@ -1,6 +1,4 @@
 package com.example.pruebaestudiante.controller;
-
-
 import com.example.pruebaestudiante.service.EstudianteService;
 import com.example.pruebaestudiante.model.EstudianteDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +36,6 @@ public class EstudianteController {
         return new ResponseEntity<>(nuevoEstudiante, HttpStatus.CREATED);
     }
 
-    // Actualizar estudiante existente
     @PutMapping("/{eid}")
     public ResponseEntity<EstudianteDTO> updateEstudiante(
             @PathVariable Long eid,

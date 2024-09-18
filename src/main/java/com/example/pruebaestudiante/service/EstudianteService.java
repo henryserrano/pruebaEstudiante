@@ -35,7 +35,6 @@ public class EstudianteService {
 
     public EstudianteDTO saveEstudiante(EstudianteDTO estudianteDTO) {
         Estudiante estudiante = estudianteMapper.toEntity(estudianteDTO);
-        System.out.println(estudiante);
         return estudianteMapper.toDto(estudianteRepository.save(estudiante));
     }
 
